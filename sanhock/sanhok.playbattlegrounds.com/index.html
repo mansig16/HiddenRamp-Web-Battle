@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from sanhok.playbattlegrounds.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 21 Jun 2018 18:13:31 GMT -->
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Welcome to Sanhok</title>
+    <meta property="og:title" content="Welcome to Sanhok" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="index.html"/>
+    <meta property="og:image" content="images/share.jpg" />
+    <meta property="og:description" content="Available on live servers on June 22" />
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto%3A400%2C500%2C100%7CTeko%3A100%2C400%2C300%2C700">
+    <link type="text/css" rel="stylesheet" href="_build/common.min.css">
+	<link rel="shortcut icon" type="image/png" href="sanhok_favicon01.png"/>
+	<link rel="shortcut icon" type="image/png" href="sanhok_favicon01.png"/>
+</head>
+<body onselectstart='return false' ondragstart='return false'>
+<div id="HEADER" class="fontTeko">
+    <div class="logo"><a href="http://www.playbattlegrounds.com/" target="_blank" onclick="eventTrack('PUBG');"><img src="images/common/logo.png" alt="PUBG"></a></div>
+    <div class="menus">
+        <a href="javascript:void(0);" class="mot3" onclick="eventTrack('SANHOK');">SANHOK</a>
+        <a href="javascript:void(0);" class="mot3" onclick="eventTrack('MISSIONS');">MISSIONS</a>
+        <a href="javascript:void(0);" class="point mot3" onclick="eventTrack('EVENT PASS');">EVENT PASS</a>
+        <a href="javascript:void(0);" class="mot3" onclick="eventTrack('FAQ');">FAQ</a>
+    </div>
+    <!--<div class="lang_area">
+        <a href="javascript:void(0);" class="lang mot3"></a>
+        <ul class="lang_list fontAFB">
+            <li>
+                <a href="#"><span class="mot3 active">ENGLISH</span></a>
+            </li>
+        </ul>
+    </div>-->
+</div>
+
+<div id="SANHOK_CONTAINER">
+    <div class="bg"></div>
+    <!-- 영상 팝업 -->
+    <div class="pop pop_main_video">
+        <div class="pop_inner">
+            <a href="javascript:SanhokCommon.closePop();" class="btn_close_pop">
+                <img src="images/common/btn_close_pop.png" alt="">
+            </a>
+            <div class="video_box">
+                <div id="videoArea"></div>
+            </div>
+        </div>
+    </div>
+    <!-- //영상 팝업 -->
+
+    <!-- 이벤트 팝업 -->
+    <div class="pop pop_eventpath">
+        <div class="pop_inner">
+            <a href="javascript:SanhokCommon.closePop();" class="btn_close_pop">
+                <img src="images/common/btn_close_pop.png" alt="">
+            </a>
+            <div class="img_box">
+                <img src="#">
+                <div class="free"></div>
+            </div>
+            <div class="copy fontAFB"></div>
+        </div>
+    </div>
+    <!-- //이벤트 팝업 -->
+
+    <div id="MAIN">
+        <div id="webgl_container"></div>
+        <div class="title_container">
+            <div class="title_inner">
+                <ul>
+                    <li class="title_imgs">
+                        <div class="title1"><img src="images/main/title1.png" alt="Avilable on Live Servers on June 22"></div>
+                        <div class="title2"><img src="images/main/title2.png" alt="WELCOME TO SANHOK"></div>
+                    </li>
+                    <li class="main_bg">
+                        <div class="main_slide_bg bg1 active mot12"></div>
+                        <div class="main_slide_bg bg2 mot12"></div>
+                        <div class="main_slide_bg bg3 mot12"></div>
+                    </li>
+                    <li class="carousel">
+                        <a href="javascript:;"><span class="mot3"></span></a>
+                        <a href="javascript:;"><span class="mot3"></span></a>
+                        <a href="javascript:;"><span class="mot3"></span></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="loading on mot2">
+                <div class="loading_inner">
+                    <img src="images/main/loading.png" alt="BATTLEGROUND Loading...">
+                    <div class="load_circle">
+                        <div class='bullet'></div>
+                        <div class='bullet'></div>
+                        <div class='bullet'></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="TRAILER">
+        <ul>
+            <li class="trailer_bg"><img src="images/trailer_bg.png" alt=""></li>
+            <li class="trailer_desc">
+                <div class="copy1 fontHN45">
+                    SURVIVE A SMALLER WORLD.<br>
+                    FIGHT A BIGGER BATTLE.
+                </div>
+                <div class="copy2 fontR"><span>100 combatants</span> drop into a 4km x 4km island. Only one leaves.</div>
+                <div class="btn">
+                    <a href="javascript:void(0);" class="btn_video_trailer" onclick="eventTrack('TRAILER');">
+                        <span class="layer"></span>
+                        <span class="text fontAFB mot3">WATCH THE TRAILER</span>
+                    </a>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="type4">
+
+        <ul>
+            <li>
+                <a href="javascript:void(0);" class="cover_a" onclick="eventTrack('MINI ROYALE');">
+                    <img src="images/main/map1.jpg" class="cover" alt="">
+                    <div class="cover_video">
+                        <video id="cover_video1" src="video/cover_video1.mp4" poster="images/main/map1.jpg" loop="" muted=""></video>
+                    </div>
+                    <div class="text">MINI ROYALE</div><span class="more">More</span>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0);" class="cover_a" onclick="eventTrack('MORE LOOT');">
+                    <img src="images/main/map2.jpg" class="cover" alt="">
+                    <div class="cover_video">
+                        <video id="cover_video2" src="video/cover_video2.mp4" poster="images/main/map2.jpg" loop="" muted=""></video>
+                    </div>
+                    <div class="text">MORE LOOT</div><span class="more">More</span>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0);" class="cover_a" onclick="eventTrack('FASTER GAMES');">
+                    <img src="images/main/map3.jpg" class="cover" alt="">
+                    <div class="cover_video">
+                        <video id="cover_video3" src="video/cover_video3.mp4" poster="images/main/map3.jpg" loop="" muted=""></video>
+                    </div>
+                    <div class="text">FASTER GAMES</div><span class="more">More</span>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0);" class="cover_a" onclick="eventTrack('NEW WEAPONS & VEHICLES');">
+                    <img src="images/main/map4.jpg" class="cover" alt="">
+                    <div class="cover_video">
+                        <video id="cover_video4" src="video/cover_video4.mp4" poster="images/main/map4.jpg" loop="" muted=""></video>
+                    </div>
+                    <div class="text">NEW WEAPONS<br><span class="fontAFB">&</span> VEHICLES</div><span class="more">More</span>
+                </a>
+            </li>
+        </ul>
+
+        <div class="video_area">
+
+            <ul>
+                <li class="video_table active">
+                    <div class="video_cell">
+                        <div class="video_inner">
+                            <div id="video_intro1"></div>
+                        </div>
+                        <div class="desc">
+                            Inspired by the islands of Southeast Asia, Sanhok is a compact battleground a quarter the size of Erangel<br>
+                            and Miramar at just 4km x 4km. The map might be smaller, but the battles won’t be.
+                        </div>
+                    </div>
+                </li>
+                <li class="video_table">
+                    <div class="video_cell">
+                        <div class="video_inner">
+                            <div id="video_intro2"></div>
+                        </div>
+                        <div class="desc">
+                            You’ll find more (and better) gear and ammo on Sanhok. Spawn rates have been adjusted so you can<br>
+                            gear up for battles quickly.
+                        </div>
+                    </div>
+                </li>
+                <li class="video_table">
+                    <div class="video_cell">
+                        <div class="video_inner">
+                            <div id="video_intro3"></div>
+                        </div>
+                        <div class="desc">
+                            Smaller island, speedier games. Circle dynamics have been adjusted to bring battles on Sanhok to a<br>
+                            dramatic finish more quickly than on the bigger maps.
+                        </div>
+                    </div>
+                </li>
+                <li class="video_table">
+                    <div class="video_cell">
+                        <div class="video_inner">
+                            <div id="video_intro4"></div>
+                        </div>
+                        <div class="desc">
+                            In the months after Sanhok’s launch, we’ll continue to add map-specific vehicles (including the Tukshai!)<br>
+                            and weapons.
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <a href="javascript:void(0)" class="btn_close"><img src="images/main/btn_close.png" alt="닫기"></a>
+            <a href="#" class="btn_prev">Before</a>
+            <a href="#" class="btn_next">Next</a>
+        </div>
+        <div class="bg_bottom"><img src="images/main/bg_line2.png" alt=""></div>
+
+    </div>
+    <div class="section" id="event_pass">
+        <h2 class="fontHN45">
+            CELEBRATE THE LAUNCH OF SANHOK<br>
+            WITH LIMITED<span class="fontAFB">-</span>TIME MISSIONS AND REWARDS!
+        </h2>
+        <h3 class="fontR"><span>Event Period: June 22 – July 21, 2018 (UTC)</span></h3>
+        <ul class="thumb_ul">
+            <li>
+                <img src="images/sub/event_thumb1.png" alt="">
+                <div class="text_box">
+                    <div class="title fontAFB">
+                        PLAY GAMES, LEVEL UP
+                    </div>
+                    <div class="text fontR">
+                        Gain experience<br>
+                        just by playing games to level up.
+                    </div>
+                </div>
+            </li>
+            <li>
+                <img src="images/sub/event_thumb2.png" alt="">
+                <div class="text_box">
+                    <div class="title fontAFB">
+                        INTRODUCING MISSIONS
+                    </div>
+                    <div class="text fontR">
+                        Take on dozens of daily and weekly challenges<br>
+                        both on Sanhok and other maps.
+                    </div>
+                </div>
+            </li>
+            <li>
+                <img src="images/sub/event_thumb3.png" alt="">
+                <div class="text_box">
+                    <div class="title fontAFB">
+                        EARN SWAG
+                    </div>
+                    <div class="text fontR">
+                        By completing missions and leveling up,<br>
+                        you’ll earn a special parachute skin<br>
+                        (the Snowflower) for free.
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <h5 class="fontAFB">UNLOCK FREE LOOT!</h5>
+        <h3>
+            Temporarily unlock some items (and earn a couple of permanent rewards) for free by leveling up!<br>
+			*We've decided to add two extra permanent rewards for all participating players! Find out more <a href="https://steamcommunity.com/games/578080/announcements/detail/1682539981270214157" target="_blank"><b>HERE</b></a><br>
+            <br>
+			(All items obtained through the Event Pass are non-tradable and non-marketable)
+        </h3>
+        <div class="rewards">
+            <div class="line"></div>
+            <ul class="item_ul">
+                <li class="item1">
+                    <div class="item">
+                        <img src="images/sub/item1.png" alt="">
+                    </div>
+                    <div class="text fontAFB">
+                        Violent<br>
+                        Violet Jacket<br>
+                        <div class="time fontR"><span>Temporary<br>Trial Item</span></div>
+                    </div>
+                </li>
+                <li class="item2">
+                    <div class="item">
+                        <img src="images/sub/item2.png" alt="">
+                    </div>
+                    <div class="text fontAFB">
+                        Turquoise<br>
+                        Delight-kar98K<br>
+                        <div class="time fontR"><span>Temporary<br>Trial Item</span></div>
+                    </div>
+                </li>
+                <li class="item3">
+                    <div class="item">
+                        <img src="images/sub/item3.png" alt="">
+                    </div>
+                    <div class="text fontAFB">
+                        Tracksuit Top<br>
+                        (Yellow)<br>
+                        <div class="time fontR"><span>Temporary<br>Trial Item</span></div>
+                    </div>
+                </li>
+                <li class="item4">
+                    <div class="item">
+                        <img src="images/sub/item4.png" alt="">
+                    </div>
+                    <div class="text fontAFB">
+                        Gold Plate<br>
+                        S686<br>
+                        <div class="time fontR"><span>Temporary<br>Trial Item</span></div>
+                    </div>
+                </li>
+                <li class="item5">
+                    <div class="item">
+                        <img src="images/sub/item5.png" alt="">
+                    </div>
+                    <div class="text fontAFB">
+                        Tracksuit Pants<br>
+                        (Yellow)<br>
+                        <div class="time fontR"><span>Temporary<br>Trial Item</span></div>
+                    </div>
+                </li>
+                <li class="item6">
+                    <div class="item">
+                        <img src="images/sub/item6.png" alt="">
+                    </div>
+                    <div class="text fontAFB">
+                        Pleated Mini-Skirt<br>
+                        (Black)<br>
+                        <div class="time fontR"><span>Temporary<br>Trial Item</span></div>
+                    </div>
+                </li>
+                <li class="item7">
+                    <div class="item">
+                        <img src="images/sub/item7.png" alt="">
+                    </div>
+                    <div class="text fontAFB">
+                        Hotpants<br>
+                        (Blue)<br>
+                        <div class="time fontR"><span>Temporary<br>Trial Item</span></div>
+                    </div>
+                </li>
+                <li class="item8">
+                    <div class="item">
+                        <img src="images/sub/item8.png" alt="">
+                    </div>
+                    <div class="text fontAFB colorSpot">
+                        Free Nickname<br>
+                        Change<br>
+                    </div>
+                </li>
+                <li class="item9">
+                    <div class="item">
+                        <img src="images/sub/item9.png" alt="">
+                    </div>
+                    <div class="text fontAFB">
+                        Permanent<br>
+                        Parachute Skin<br>
+                        'Snowflower'
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="section" id="newItem">
+        <div class="inner">
+            <div class="img">
+                <img src="images/sub/newItem_img1.png" alt="" class="img1">
+                <img src="images/sub/newItem_img2.png" alt="" class="img2">
+                <img src="images/sub/newItem_img3.png" alt="" class="img3">
+            </div>
+            <div class="text_box">
+                <h2 class="fontHN45">EVENT PASS: SANHOK</h2>
+                <h3 class="fontAFB">GET EVEN MORE MISSIONS AND LOOT!</h3>
+                <h4 class="fontR">
+                    With the launch of Sanhok, we’re introducing an exciting new way to<br>
+                    unlock cosmetic rewards in PUBG. Purchase Event Pass: Sanhok from the Steam Store<br>
+                    to open up more missions, more levels, and tons of permanent rewards.<br>
+                    (All items obtained through the Event Pass are non-tradable and non-marketable)
+                </h4>
+            </div>
+        </div>
+    </div>
+    <div id="EVENTPATH">
+        <div class="section" id="limited_event_pass">
+            <div class="s_inner">
+                <h2 class="h2_title upper fontHN45">EVENT PASS: SANHOK REWARDS</h2>
+                <h3 class="h3_copy fontR">Level up to unlock premium rewards like these.</h3>
+                <div class="sec_content">
+                    <div class="tab_area fclear">
+                        <div class="t_menu t_menu2 active">
+                            <a class="upper mot2" href="javascript:;" onclick="eventTrack('OUTFIT VIEW');"><span>outfit view</span></a>
+                        </div>
+                        <div class="t_menu t_menu1">
+                            <a class="upper mot2" href="javascript:;" onclick="eventTrack('LEVEL VIEW');"><span>level view</span></a>
+                        </div>
+                        <div class="t_menu t_menu3">
+                            <a class="upper mot2" href="javascript:;" onclick="eventTrack('SANHOK MISSION');"><span>sanhok mission</span></a>
+                        </div>
+                    </div>
+                    <div class="tab_content">
+                        <div class="watch_btn section0">
+                            <a href="javascript:;">
+                                <video id="watchVideo" src="video/watch_btn_video.mp4" autoplay="" loop=""></video>
+                                <span class="text fontAFB mot3">WATCH VIDEO 1</span>
+                            </a>
+                        </div>
+
+
+                        <div class="tab_cnt tab_cnt2 active">
+                            <div class="slider_area">
+                                <div class="character">
+                                    <div class="slide_container fontAFB">
+                                        <!-- slide list -->
+                                    </div>
+                                </div>
+                                <a href="javascript:;" class="btn_prev"></a>
+                                <a href="javascript:;" class="btn_next"></a>
+                                <div class="pointer">
+                                    <a class="on" href="javascript:;"></a>
+                                    <a href="javascript:;"></a>
+                                    <a href="javascript:;"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab_cnt tab_cnt1">
+                            <div class="tab_level_area fclear">
+                                <div class="t_level1 on"><a class="upper mot2" href="javascript:;"><span>level 01-10</span></a></div>
+                                <div class="t_level2"><a class="upper mot2" href="javascript:;"><span>level 11-20</span></a></div>
+                                <div class="t_level3"><a class="upper mot2" href="javascript:;"><span>level 21-30</span></a></div>
+                            </div>
+                            <div class="level_content">
+
+                            </div>
+                        </div>
+                        <div class="tab_cnt tab_cnt3">
+                            <div class="left_character">
+                                <ul class="">
+                                    <!-- sanhok character list -->
+                                </ul>
+                            </div>
+                            <div class="right_item_list">
+                                <div class="title fontAFB">SANHOK MISSION ITEM</div>
+                                <ul>
+                                    <!-- sanhok item list -->
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section" id="premium">
+        <div class="inner">
+            <div class="img">
+                <img src="images/sub/premium_img1.png" alt="" class="img1">
+                <img src="images/sub/premium_img2.png" alt="" class="img2">
+                <img src="images/sub/premium_img3.png" alt="" class="img3">
+            </div>
+            <div class="text_box">
+                <h2 class="fontAFB">
+                    BUY NOW AND IMMEDIATELY<br>
+                    <span>RECEIVE 400 XP TO LEVEL UP!</span>
+                </h2>
+                <a href="javascript:void(0);" class="btn_buy mot3" onclick="eventTrack('Open_Buy Event Pass');"><span class="fontAFB">BUY EVENT PASS: SANHOK</span></a>
+            </div>
+        </div>
+    </div>
+    <div class="section" id="hidden">
+        <div class="inner">
+            <ul>
+                <li>
+                    <a href="https://store.steampowered.com/app/888770/Event_Pass_Sanhok/" target="_blank" class="text_box img1 mot3" onclick="eventTrack('Buy Event Pass');">
+                        <div class="title fontAFB">BUY EVENT PASS</div>
+                        <div class="price fontAFB">$ 9.99</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:alert('Coming Soon!');" target="_blank" class="text_box img2 mot3" onclick="eventTrack('Buy 5 Levels');">
+                        <div class="title fontAFB">BUY 5 LEVELS</div>
+                        <div class="price fontAFB">$ 4.99</div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="section" id="faq">
+        <h2 class="fontHN45">FAQ</h2>
+        <ul class="faq_ul fontR">
+            <li>
+                <a href="javascript:void(0);" class="mot3 btn_q">
+                    <span class="q mot3 fontAFB">Q</span> <span class=" mot3">How can I purchase the EVENT PASS?</span>
+                </a>
+                <div class="hidden_faq">
+                    <div class="inner_faq">
+                        <span>
+                            Purchase it directly through Steam or through the store page in the PUBG main menu’s game lobby!
+                        </span>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <a href="javascript:void(0);" class="mot3 btn_q">
+                    <span class="q mot3 fontAFB">Q</span> <span class=" mot3">What if I purchase the event pass midway through the event period?</span>
+                </a>
+                <div class="hidden_faq">
+                    <div class="inner_faq">
+                        <span>
+                            We’ll track all of your progress toward the event pass missions even if you don’t purchase the pass, so if you purchase it midway through the event you’ll still be able to claim all the rewards you’ve earned!
+                        </span>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <a href="javascript:void(0);" class="mot3 btn_q">
+                    <span class="q mot3 fontAFB">Q</span> <span class=" mot3">Does this only work on the new Sanhok map?</span>
+                </a>
+                <div class="hidden_faq">
+                    <div class="inner_faq">
+                        <span>
+                            Event pass missions are applicable to all maps, except for just a few which are clearly labeled as Sanhok Missions.
+                        </span>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <a href="javascript:void(0);" class="mot3 btn_q">
+                    <span class="q mot3 fontAFB">Q</span> <span class=" mot3">What happens to the items after the event?</span>
+                </a>
+                <div class="hidden_faq">
+                    <div class="inner_faq">
+                        <span>
+                            If you’re playing without purchasing the event pass, you’ll receive the Nickname Change item and permanently unlock the parachute (obtainable at level 20), but all other earned cosmetic items will expire. However, if you purchase the event pass, you will be able to obtain a lot more cosmetic items that will not expire even after the event period. All temporary items (marked with the timer icon) will expire regardless of purchasing the event pass.
+                        </span>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <a href="javascript:void(0);" class="mot3 btn_q">
+                    <span class="q mot3 fontAFB">Q</span> <span class=" mot3">Tell me more about those Sanhok missions!</span>
+                </a>
+                <div class="hidden_faq">
+                    <div class="inner_faq">
+                        <span>
+                            Sanhok missions are only playable by players who purchased the Event Pass. Accomplishing these missions offer a special Sanhok-themed reward.
+                        </span>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <a href="javascript:void(0);" class="mot3 btn_q">
+                    <span class="q mot3 fontAFB">Q</span> <span class=" mot3">How do you level up your pass?</span>
+                </a>
+                <div class="hidden_faq">
+                    <div class="inner_faq">
+                        <span>
+                            Accomplish missions to gain experience points, or simply accumulate survival time to rack up experience points (2 XP every five minutes in-game, up to 80 XP per day). Those who have purchased the Event Pass can rack up 4 XP every five minutes of survival time up to a total of 80 XP per day.
+                        </span>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="section" id="buyGame">
+        <div class="buy_bg"></div>
+        <div class="parachute">
+            <img src="images/sub/parachute.png" alt="">
+        </div>
+        <div class="inner">
+            <h2 class="fontHN45">
+                JOIN THE ULTIMATE LIFE<br>
+                <span>AND DEATH FIGHT</span>
+            </h2>
+            <h3 class="fontAFB">PURCHASE PUBG FOR 33% OFF RIGHT NOW!</h3>
+            <a href="https://store.steampowered.com/app/578080/PLAYERUNKNOWNS_BATTLEGROUNDS/" target="_blank" class="btn_buy_game fontAFB" onclick="eventTrack('Buy Game');">
+                <span class="ribbon"><img src="images/sub/save.png" alt="33%"></span>
+                <span class="text mot3">BUY GAME</span>
+            </a>
+        </div>
+    </div>
+</div>
+
+
+
+<footer class="footer">
+    <ul class="ico_ul">
+        <li>
+            <a href="https://www.twitch.tv/" target="_blank" class="ico1"></a>
+        </li>
+        <li>
+            <a href="https://www.facebook.com/PUBG/" target="_blank" class="ico2"></a>
+        </li>
+        <li>
+            <a href="https://twitter.com/pubg" target="_blank" class="ico3"></a>
+        </li>
+        <li>
+            <a href="https://www.youtube.com/pubg" target="_blank" class="ico4"></a>
+        </li>
+        <li>
+            <a href="https://www.instagram.com/pubg/" target="_blank" class="ico5"></a>
+        </li>
+        <li>
+            <a href="https://discordapp.com/invite/battlegrounds" target="_blank" class="ico6"></a>
+        </li>
+        <li>
+            <a href="https://www.reddit.com/r/PUBATTLEGROUNDS/" target="_blank" class="ico7"></a>
+        </li>
+    </ul>
+    <div class="footer_inner">
+        <div class="logo">
+            <img src="images/common/logo_pubg.png" alt="PUBG">
+        </div>
+        <div class="text fontR">
+            <div class="copy_right">
+                COPYRIGHT ©2018 PUBG CORPORATION. ALL RIGHTS RESERVED.<br>
+                PLAYERUNKNOWN'S BATTLEGROUNDS and PUBG are registered trademarks, trademarks or service marks of PUBG.
+            </div>
+            <ul class="link_ul">
+                <li>
+                    <a href="https://pubgwebsite.wpengine.com/privacy/" target="_blank">Privacy Policy</a>
+                </li>
+                <li>
+                    <a href="https://pubgwebsite.wpengine.com/rules-of-conduct/" target="_blank">Rules of conduct</a>
+                </li>
+                <li>
+                    <a href="https://pubgwebsite.wpengine.com/eula/" target="_blank">EULA</a>
+                </li>
+                <li>
+                    <a href="https://pubgwebsite.wpengine.com/player-created-content/" target="_blank">Player-created content</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+<script>
+    var GLOBAL_PATH = 'index.html';
+    var YOUTUBE_ID = {
+        trailer:"Qvd2YbP8j64",
+        sanhok1:"FgLLOcer4so",
+        sanhok2:"8K2AIQHsIrw",
+        sanhok3:"EDpKcZ-6wEU",
+        sanhok4:"BNnlrPFROCU",
+        eventpath1:"cnTGt9rM2WI",
+        eventpath2:"nNlD1FzUWIU",
+        eventpath3:"4Y5056LXtnk"
+    }
+    var level_items_arr = [
+        [
+            {img:"mission_item1-10_1", type:"img", level:"Level 1", name:"400 XP"},
+            {img:"mission_item1-10_2", type:"img", level:"Level 2", name:"BP Boost"},
+            {img:"mission_item1-10_3", type:"img", level:"Level 3", name:"500 BP"},
+            {img:"mission_item1-10_5", type:"img", level:"Level 4", name:"Jailbird T-shirt"},
+            {img:"mission_item1-10_6", type:"img", level:"Level 5", name:"Escapee Pants"},
+            {img:"mission_item1-10_8", type:"img", level:"Level 6", name:"200 XP"},
+            {img:"mission_item1-10_9", type:"img", level:"Level 7", name:"Escapee Shoes"},
+            {img:"mission_item1-10_2", type:"img", level:"Level 8", name:"BP Boost"},
+            {img:"mission_item1-10_11", type:"img", level:"Level 9", name:"Silver Plate - Mini 14"},
+            {img:"mission_item1-10_13", type:"img", level:"Level 10", name:"700 BP"},
+            {type:"emptybox"},
+            {type:"emptybox"}
+        ],
+        [
+            {img:"mission_item11-20_1", type:"img", level:"Level 11", name:"Beach Shorts"},
+            {img:"mission_item1-10_8", type:"img", level:"Level 12", name:"200 XP"},
+            {img:"mission_item11-20_3", type:"img", level:"Level 13", name:"Jailbird Joggers"},
+            {img:"mission_item1-10_2", type:"img", level:"Level 14", name:"BP Boost"},
+            {img:"mission_item11-20_5", type:"img", level:"Level 15", name:"Escapee Jacket"},
+            {img:"mission_item1-10_3", type:"img", level:"Level 16", name:"500 BP"},
+            {img:"mission_item11-20_7", type:"img", level:"Level 17", name:"Guard Pants"},
+            {img:"mission_item1-10_13", type:"img", level:"Level 18", name:"700 BP"},
+            {img:"mission_item11-20_9", type:"img", level:"Level 19", name:"Guard Cap"},
+            {img:"mission_item1-10_8", type:"img", level:"Level 20", name:"200 XP"},
+            {type:"emptybox"},
+            {type:"emptybox"}
+        ],
+        [
+            {img:"mission_item21-30_1", type:"img", level:"Level 21", name:"Gold Plate - P92"},
+            {img:"mission_item21-30_2", type:"img", level:"Level 22", name:"Guard Jacket"},
+            {img:"mission_item21-30_3", type:"img", level:"Level 23", name:"Rash Vest"},
+            {img:"mission_item21-30_4", type:"img", level:"Level 24", name:"Rose-tinted Glasses"},
+            {img:"mission_item1-10_2", type:"img", level:"Level 25", name:"BP Boost"},
+            {img:"mission_item21-30_5", type:"img", level:"Level 26", name:"Beach Shirt (Coral)"},
+            {img:"mission_item21-30_6", type:"img", level:"Level 27", name:"2000 BP"},
+            {img:"mission_item21-30_7", type:"img", level:"Level 28", name:"Twisty Top (Beige)"},
+            {img:"mission_item21-30_8", type:"img", level:"Level 29", name:"Guard Skirt"},
+            {img:"mission_item21-30_9", type:"img", level:"Level 30", name:"Paradise Bottom"},
+            {type:"emptybox"},
+            {type:"emptybox"}
+        ]
+    ];
+
+    var sanhock_items_arr = [
+        {img:"sanok_item1", type:"img", copy:"Sanhok Mission", name:"Twisty Top (Light Blue)"},
+        {img:"sanok_item2", type:"img", copy:"Sanhok Mission", name:"Beach Shirt (Yellow)"},
+        {img:"sanok_item3", type:"img", copy:"Sanhok Mission", name:"Cat Eyes"},
+        {img:"sanok_item4", type:"img", copy:"Sanhok Mission", name:"Beach Shorts (Teal)"},
+        {img:"sanok_item5", type:"img", copy:"Sanhok Mission", name:"Jungle Digital - Scar-L"},
+        {type:"copy", copy:"Play Sanhok and Unlock Loot!<br>(All items are non-tradable<br> and non-marketable)"}
+    ]
+
+    var char_custume_data_arr = [
+        {thumb:"custume_list1", spot: [
+            {img:"mission_item11-20_1", title:"Level 11", copy:"Beach Shorts",pos:"tr"},
+            {img:"mission_item21-30_5", title:"Level 26", copy:"Beach Shirt (Coral)",pos:"tr"}
+        ]},
+        {thumb:"custume_list2", spot: [
+            {img:"mission_item21-30_7", title:"Level 28", copy:"Twisty Top (Beige)", pos:"tl"},
+            {img:"sanok_item5", title:"Sanhok Mission", copy:"Jungle Digital - Scar-L", pos:"tr"},
+            {img:"mission_item21-30_9", title:"Level 30", copy:"Paradise Bottom", pos:"bl"},
+        ]},
+        {thumb:"custume_list3", spot: [
+            {img:"sanok_item5", title:"Sanhok Mission", copy:"Jungle Digital - Scar-L", pos:"tl"},
+            {img:"mission_item21-30_3", title:"Level 23", copy:"Rash Vest", pos:"tl"},
+            {img:"mission_item21-30_9", title:"Level 30", copy:"Paradise Bottom", pos:"bl"}
+        ]},
+        {thumb:"custume_list4", spot: [
+            {img:"mission_item11-20_5", title:"Level 15", copy:"Escapee Jacket", pos:"tr"},
+            {img:"mission_item1-10_6", title:"Level 5", copy:"Escapee Pants", pos:"tr"}
+        ]},
+        {thumb:"custume_list5", spot: [
+            {img:"mission_item1-10_5", title:"Level 4", copy:"Jailbird T-shirt", pos:"tr"},
+            {img:"mission_item11-20_3", title:"Level 13", copy:"Jailbird Joggers", pos:"tl"},
+            {img:"mission_item1-10_9", title:"Level 7", copy:"Escapee Shoes", pos:"tr"}
+        ]},
+        {thumb:"custume_list6", spot: [
+            {img:"mission_item11-20_9", title:"Level 19", copy:"Guard Cap", pos:"bl"},
+            {img:"mission_item21-30_2", title:"Level 22", copy:"Guard Jacket", pos:"tr"},
+            {img:"mission_item21-30_8", title:"Level 29", copy:"Guard Skirt", pos:"bl"},
+            {img:"mission_item1-10_11", title:"Level 9", copy:"Silver Plate", pos:"tr"}
+        ]},
+        {thumb:"custume_list7", spot: [
+            {img:"mission_item11-20_9", title:"Level 19", copy:"Guard Cap", pos:"bl"},
+            {img:"mission_item21-30_2", title:"Level 22", copy:"Guard Jacket", pos:"tl"},
+            {img:"mission_item21-30_1", title:"Level 21", copy:"Gold Plate - P92", pos:"bl"},
+            {img:"mission_item11-20_7", title:"Level 17", copy:"Guard Pants", pos:"tl"}
+        ]},
+        {thumb:"custume_list8", spot: [
+            {img:"mission_item1-10_12", title:"Level 10(Trial) ", copy:"Gold Plate - S686", pos:"bl", free:true},
+            {img:"mission_item11-20_4", title:"Level 14(Trial) ", copy:"Pleated Mini<br>-Skirt (Black)", pos:"tr", free:true}
+        ]},
+        {thumb:"custume_list9", spot: [
+            {img:"mission_item1-10_10", title:"Level 8(Trial) ", copy:"Tracksuit Top (Yellow)", pos:"bl", free:true},
+            {img:"mission_item11-20_2", title:"Level 12(Trial) ", copy:"Tracksuit Pants (Yellow)", pos:"tr", free:true}
+        ]},
+        {thumb:"custume_list10", spot: [
+            {img:"mission_item1-10_4", title:"Level 3(Trial) ", copy:"Violent Violet Jacket", pos:"bl", free:true},
+            {img:"mission_item1-10_7", title:"Level 6(Trial) ", copy:"Turquoise Delight<br>- Kar98K", pos:"tr", free:true},
+            {img:"mission_item11-20_8", title:"Level 18(Trial) ", copy:"Hotpants (Blue)", pos:"bl", free:true}
+        ]}
+    ]
+
+    var char_sanhok_data_arr = [
+        {thumb:"sanok_char1", spot: [
+            {img:"sanok_item3", title:"Sanhok Mission", copy:"Cat Eyes", pos:"bl", etc:"+ No sale item"},
+            {img:"sanok_item1", title:"Sanhok Mission", copy:"Twisty Top (Light Blue)", pos:"tr", etc:"+ No sale item"},
+            {img:"sanok_item5", title:"Sanhok Mission", copy:"Jungle Digital - Scar-L", pos:"tr", etc:"+ No sale item"}
+        ]},
+        {thumb:"sanok_char2", spot: [
+            {img:"sanok_item2", title:"Sanhok Mission", copy:"Beach Shirt(Yellow)", pos:"tl", etc:"+ No sale item"},
+            {img:"sanok_item4", title:"Sanhok Mission", copy:"Beach Shorts(Teal)", pos:"tl", etc:"+ No sale item"}
+        ]}
+    ]
+
+    var tag = document.createElement('script');
+    tag.src = "https://www.youtube.com/iframe_api";
+    var firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+    /* youtube */
+    var player,intro1Player,intro2Player,intro3Player,intro4Player;
+    function onYouTubeIframeAPIReady() {
+        player = new YT.Player('videoArea', {
+            height: '390',
+            width: '640',
+            playerVars: { rel:0 , wmode:'opaque'},
+            videoId: YOUTUBE_ID.trailer,
+            events: {
+                'onReady': onPlayerReady
+            }
+        });
+        intro1Player = new YT.Player('video_intro1', {
+            height: '390',
+            width: '640',
+            playerVars: { rel:0 , wmode:'opaque'},
+            videoId: YOUTUBE_ID.sanhok1,
+            events: {
+                'onReady': onPlayerReady,
+                'onStateChange': onPlayerStateChange
+            }
+        });
+        intro2Player = new YT.Player('video_intro2', {
+            height: '390',
+            width: '640',
+            playerVars: { rel:0 , wmode:'opaque'},
+            videoId: YOUTUBE_ID.sanhok2,
+            events: {
+                'onReady': onPlayerReady,
+                'onStateChange': onPlayerStateChange
+            }
+        });
+        intro3Player = new YT.Player('video_intro3', {
+            height: '390',
+            width: '640',
+            playerVars: { rel:0 , wmode:'opaque'},
+            videoId: YOUTUBE_ID.sanhok3,
+            events: {
+                'onReady': onPlayerReady,
+                'onStateChange': onPlayerStateChange
+            }
+        });
+        intro4Player = new YT.Player('video_intro4', {
+            height: '390',
+            width: '640',
+            playerVars: { rel:0 , wmode:'opaque'},
+            videoId: YOUTUBE_ID.sanhok4,
+            events: {
+                'onReady': onPlayerReady,
+                'onStateChange': onPlayerStateChange
+            }
+        });
+    }
+    function onPlayerReady(event) {
+        event.target.setPlaybackQuality('hd720');
+    }
+
+    function onPlayerStateChange(event) {
+        if (event.data == YT.PlayerState.BUFFERING) {
+            event.target.setPlaybackQuality('hd720');
+        }
+    }
+    function stopVideo() {
+        player.stopVideo();
+    }
+</script>
+
+
+<script src="_build/common.min.js"></script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-120964670-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-120964670-1');
+
+    function eventTrack(google){
+        if(google != ''){
+            gtag('event', google);
+        }
+    }
+</script>
+
+</body>
+
+<!-- Mirrored from sanhok.playbattlegrounds.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 21 Jun 2018 18:13:45 GMT -->
+</html>

@@ -1,0 +1,12 @@
+HTTrack3.49-2+htsswf+htsjava launched on Thu, 21 Jun 2018 23:43:29 at https://sanhok.playbattlegrounds.com/ +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" https://sanhok.playbattlegrounds.com/ -O1 "F:\extras\sanhock" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+23:44:13	Error: 	"Forbidden" (403) at link https://sanhok.playbattlegrounds.com/images/common/btn_lang.png (from https://sanhok.playbattlegrounds.com/_build/common.min.css)
+
+HTTrack Website Copier/3.49-2 mirror complete in 44 seconds : 118 links scanned, 116 files written (13467394 bytes overall) [13519668 bytes received at 307265 bytes/sec], 29.5 requests per connection
+(1 errors, 0 warnings, 0 messages)

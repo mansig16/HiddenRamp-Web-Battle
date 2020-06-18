@@ -1,0 +1,31 @@
+@media (min-width: 768px){
+.intro {
+    height: 100%;
+    padding: 0;
+  }
+}
+.intro {
+  display: table;
+    width: 100%;
+    height: auto;
+    padding: 300px 0;
+    text-align: center;
+    color: #fff;
+    background: url(https://static.pexels.com/photos/618403/pexels-photo-618403.jpeg) no-repeat center center fixed;
+    background-color: #5a5a5a;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  position:relative;
+}
+#spiders {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  max-width: 100%;
+}
+article.custom-post {position: absolute;top: 30%;left: calc(50% - 300px);text-align: center;width: 600px;background: rgba(0,0,0, .5)}
+article h1 {font-size: 2em;font-family: Sans-serif;
+}
